@@ -23,20 +23,13 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
         };
-        gresc: grave_escape {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GRAVE_ESCAPE";
-            #binding-cells = <0>;
-            bindings = <&kp ESC>, <&kp GRAVE>;
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-        };
     };
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-    &kp GRAVE_ESCAPE   &kp Q     &kp W    &kp E     &kp R        &kp T      &kp Y     &kp U        &kp I     &kp O     &kp P    &kp BACKSPACE_DELETE
+    &gresc      &kp Q     &kp W    &kp E     &kp R        &kp T      &kp Y     &kp U        &kp I     &kp O     &kp P    &bspc_del
     &kp TAB     &kp A     &kp S    &kp D     &kp F        &kp G      &kp H     &kp J        &kp K     &kp L     &kp SEMI &kp SQT
     &kp LSHFT   &kp Z     &kp X    &kp C     &kp V        &kp B      &kp N     &kp M        &kp COMMA &kp DOT   &kp FSLH &kp ENTER
     &kp LCTRL   &kp NUBS  &kp LGUI &kp LALT  &mo MODIFIED &kp SPACE  &trans    &to NUM_MODS &kp LEFT  &kp RIGHT &kp UP   &kp DOWN
@@ -45,7 +38,7 @@
 
         num_mods {
             bindings = <
-    &kp GRAVE &kp N1        &kp N2   &kp N3   &kp N4      &kp N5     &kp N6    &kp N7       &kp N8    &kp N9     &kp N0     &kp BACKSPACE_DELETE
+    &kp GRAVE &kp N1        &kp N2   &kp N3   &kp N4      &kp N5     &kp N6    &kp N7       &kp N8    &kp N9     &kp N0     &bspc_del
     &kp TAB   &trans        &trans   &trans   &trans      &kp UNDER  &kp EQUAL &kp N4       &kp N5    &kp N6     &kp MINUS  &kp BSLH
     &kp LSHFT &trans        &trans   &trans   &trans      &kp MINUS  &kp PLUS  &kp N1       &kp N2    &kp N3     &kp EQUAL  &kp ENTER
     &kp LCTRL &mo BT_CTRL   &kp LGUI &kp LALT &to DEFAULT &kp SPACE  &trans    &to NUM_MODS &kp N0    &kp DOT    &kp UP     &kp DOWN
