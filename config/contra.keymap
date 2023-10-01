@@ -36,7 +36,7 @@
 
         default_layer {
             bindings = <
-    &kp GRESC   &kp Q     &kp W    &kp E     &kp R        &kp T      &kp Y     &kp U        &kp I     &kp O     &kp P    &kp BSPC_DEL
+    &kp GRAVE_ESCAPE   &kp Q     &kp W    &kp E     &kp R        &kp T      &kp Y     &kp U        &kp I     &kp O     &kp P    &kp BACKSPACE_DELETE
     &kp TAB     &kp A     &kp S    &kp D     &kp F        &kp G      &kp H     &kp J        &kp K     &kp L     &kp SEMI &kp SQT
     &kp LSHFT   &kp Z     &kp X    &kp C     &kp V        &kp B      &kp N     &kp M        &kp COMMA &kp DOT   &kp FSLH &kp ENTER
     &kp LCTRL   &kp NUBS  &kp LGUI &kp LALT  &mo MODIFIED &kp SPACE  &trans    &to NUM_MODS &kp LEFT  &kp RIGHT &kp UP   &kp DOWN
@@ -45,7 +45,7 @@
 
         num_mods {
             bindings = <
-    &kp GRAVE &kp N1        &kp N2   &kp N3   &kp N4      &kp N5     &kp N6    &kp N7       &kp N8    &kp N9     &kp N0     &kp BSPC_DEL
+    &kp GRAVE &kp N1        &kp N2   &kp N3   &kp N4      &kp N5     &kp N6    &kp N7       &kp N8    &kp N9     &kp N0     &kp BACKSPACE_DELETE
     &kp TAB   &trans        &trans   &trans   &trans      &kp UNDER  &kp EQUAL &kp N4       &kp N5    &kp N6     &kp MINUS  &kp BSLH
     &kp LSHFT &trans        &trans   &trans   &trans      &kp MINUS  &kp PLUS  &kp N1       &kp N2    &kp N3     &kp EQUAL  &kp ENTER
     &kp LCTRL &mo BT_CTRL   &kp LGUI &kp LALT &to DEFAULT &kp SPACE  &trans    &to NUM_MODS &kp N0    &kp DOT    &kp UP     &kp DOWN
